@@ -1,0 +1,396 @@
+/* 版心宽度 */
+.w {
+	width: 1240px;
+	margin: 0 auto;
+}
+/* 头部快捷导航栏开始 */
+.shortcut {
+	background-color: #333;
+}
+.shortcut_right {
+	height: 50px;
+}
+.shortcut_right ul {
+	float: right;
+}
+.shortcut_right ul li {
+	float: left;
+	line-height: 50px;
+}
+.shortcut_right ul li a {
+	border-right: 2px solid #999;
+	padding: 0 15px;
+}
+.shortcut_right ul li:last-child a {
+	border: 0;
+}
+/* 添加字体图标 */
+.nav_phone {
+	font-family: 'icomoon';
+}
+/* 头部快捷导航栏结束 */
+
+/* 头部开始 */
+.header {
+	background-color: #fff;
+}
+.header_container {
+	height: 130px;
+}
+/* logo */
+.logo {
+	float: left;
+}
+.logo a {
+	display: block;
+	width: 200px;
+	height: 130px;
+	background: url(../image/logo.0940ebb5.png) no-repeat center / contain;
+	font-size: 0;
+}
+/* 头部导航栏 */
+.header_nav {
+	position: relative;
+	float: left;
+	margin-top: 50px;
+}
+.header_nav ul li {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	margin-left: 35px;
+}
+.header_nav ul li a {
+	color: #000;
+	padding-bottom: 5px;
+}
+.header_nav ul li > a:hover {
+	border-bottom: 1px solid #39ba9b;
+}
+.header_nav ul li:hover > .header_hover {
+	height: 120px;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+	opacity: 1;
+}
+/* 头部hover显示模块 */
+.header_hover {
+	overflow: hidden;
+	position: absolute;
+	top: 55px;
+	left: -200px;
+	width: 1240px;
+	height: 0;
+	background-color: #fff;
+	transition: all 0.2s 0.1s;
+	opacity: 0;
+	z-index: 20;
+}
+.header_hover ul {
+	width: 1240px;
+	height: 120px;
+}
+.header_hover ul li {
+	float: left;
+	width: 100px;
+	height: 90px;
+	margin-left: 30px;
+	margin-top: 15px;
+	text-align: center;
+}
+.header_hover ul li a {
+	display: block;
+	width: 100px;
+	height: 90px;
+	font-size: 15px;
+}
+.header_hover ul li a:hover {
+	border: 0;
+}
+.header_hover ul li a img {
+	width: 60px;
+	height: 60px;
+}
+/* 搜索模块 */
+.header_inp {
+	position: relative;
+	float: left;
+	height: 30px;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.header_inp button {
+	position: absolute;
+	width: 30px;
+	height: 29px;
+	border: 0;
+	background-color: #fff;
+	font-family: 'icomoon';
+}
+.header_inp input {
+	float: left;
+	width: 170px;
+	height: 30px;
+	text-indent: 30px;
+	border: 0;
+	border-bottom: 1px solid #cdcdcd;
+	outline: none;
+}
+/* 购物车模块 */
+.header_shopcar {
+	float: left;
+	margin-top: 50px;
+	margin-left: 20px;
+}
+.header_shopcar button {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	border: 0;
+	font-size: 20px;
+	background-color: #fff;
+	font-family: 'icomoon';
+}
+.header_shopcar button::after {
+	content: '22';
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	width: 20px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	border-radius: 8px;
+	color: #fff;
+	background-color: #dd633b;
+}
+/* 头部结束 */
+
+/* 头部导航栏固定定位开始 */
+.header_fixed {
+	position: absolute;
+	top: -81px;
+	left: 0;
+	transition: all 0.1s;
+	width: 100%;
+	border-bottom: 1px solid #cdcdcd;
+	background-color: #fff;
+	z-index: 20;
+}
+.header_content {
+	height: 80px;
+}
+/* logo */
+.logos {
+	float: left;
+}
+.logos a {
+	display: block;
+	width: 200px;
+	height: 80px;
+	background: url(../image/logo.0940ebb5.png) no-repeat center / contain;
+	font-size: 0;
+}
+.headerNav {
+	position: relative;
+	float: left;
+	height: 30px;
+	margin-top: 25px;
+}
+.headerNav ul li {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	margin-left: 35px;
+}
+.headerNav ul li a {
+	color: #000;
+	padding-bottom: 5px;
+}
+.headerNav ul li > a:hover {
+	border-bottom: 1px solid #39ba9b;
+}
+.headerNav ul li:hover > .headerFixed {
+	height: 120px;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+	opacity: 1;
+}
+/* hover显示部分 */
+.headerFixed {
+	overflow: hidden;
+	position: absolute;
+	top: 55px;
+	left: -200px;
+	width: 1240px;
+	height: 0;
+	background-color: #fff;
+	transition: all 0.2s 0.1s;
+	opacity: 0;
+	z-index: 20;
+}
+.headerFixed ul {
+	width: 1240px;
+	height: 120px;
+}
+.headerFixed ul li {
+	float: left;
+	width: 100px;
+	height: 90px;
+	margin-left: 30px;
+	margin-top: 15px;
+	text-align: center;
+}
+.headerFixed ul li a {
+	display: block;
+	width: 100px;
+	height: 90px;
+	font-size: 15px;
+}
+.headerFixed ul li a:hover {
+	border: 0;
+}
+.headerFixed ul li a img {
+	width: 60px;
+	height: 60px;
+}
+.aaa {
+	height: 2000px;
+	background-color: pink;
+}
+/* 头部导航栏固定定位结束 */
+
+/* 底部开始 */
+.contentHelp {
+	background-color: #fff;
+}
+.mod_help {
+	height: 290px;
+	padding-top: 50px;
+}
+.mod_help > div {
+	float: left;
+	width: 300px;
+	height: 190px;
+	border-right: 1px solid #999;
+}
+.mod_help > div:last-child {
+	border: 0;
+}
+.mod_help dl dt {
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	text-align: center;
+}
+.mod_help dl dd {
+	float: left;
+	width: 92px;
+	height: 92px;
+	text-align: center;
+	margin-left: 40px;
+	border: 1px solid #333;
+}
+.mod_help dl dd i {
+	font-size: 40px;
+	font-family: 'icomoon';
+	cursor: pointer;
+}
+.mod_help dl dd i:hover {
+	color: #39ba9b;
+}
+/* 下载模块 */
+.download dl dd img {
+	width: 100%;
+}
+.download dl > dd:last-child {
+	border: 0;
+}
+.download span {
+	display: block;
+	text-align: center;
+}
+.download a {
+	display: block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 2px;
+	background-color: #39ba9b;
+}
+.download a:hover {
+	color: #fff !important;
+}
+/* 服务热线模块 */
+.hotline dl dd {
+	width: 200px;
+	border: 0;
+}
+.hotline dl dd span {
+	display: block;
+	font-size: 20px;
+}
+.hotline dl dd span:last-child {
+	font-size: 16px;
+}
+/* 底部版权模块 */
+/* 口号模块 */
+.contentCopyright {
+	height: 350px;
+	background-color: #333;
+}
+.slogan {
+	height: 180px;
+	border-bottom: 1px solid #999;
+}
+.slogan > div {
+	float: left;
+	width: 400px;
+	height: 180px;
+	line-height: 180px;
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+}
+/* 版权内容模块 */
+.copyright p {
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	padding-top: 30px;
+}
+.copyright p a {
+	padding: 0 10px;
+}
+/* 底部结束 */
+
+/* 返回顶部按钮开始 */
+.BackTop {
+	position: fixed;
+	overflow: hidden;
+	top: 70%;
+	right: 8%;
+	width: 70px;
+	height: 70px;
+	line-height: 80px;
+	text-align: center;
+	font-size: 16px;
+	background-color: #eee;
+	border-radius: 5px;
+	cursor: pointer;
+	opacity: 0;
+	transition: all 0.2s;
+}
+.BackTop p::before {
+	content: '\e90a';
+	position: absolute;
+	top: -25px;
+	left: 21px;
+	font-size: 25px;
+	font-family: 'icomoon';
+}
+.BackTop:hover {
+	color: #39ba9b;
+	box-shadow: 0 0px 10px rgb(0 0 0 / 20%);
+}
