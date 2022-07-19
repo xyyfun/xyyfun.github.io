@@ -1,0 +1,44 @@
+/* 头部开始 */
+.head_fixed {
+	position: absolute;
+	top: -80px;
+	overflow: hidden;
+	width: 100%;
+	height: 80px;
+	/* border-bottom: 1px solid #cdcdcd; */
+	transition: all 0.5s;
+	z-index: 9999;
+}
+.headers {
+	height: 80px;
+}
+/* logo部分 */
+.logos {
+	float: left;
+	width: 200px;
+	height: 80px;
+}
+.logos a {
+	display: block;
+	width: 200px;
+	height: 80px;
+	background: url(../image/logo.0940ebb5.png) no-repeat center / contain;
+	font-size: 0;
+}
+.navs {
+	float: left;
+	height: 80px;
+}
+.navs ul li {
+	float: left;
+	font-size: 16px;
+	line-height: 80px;
+	padding-left: 40px;
+}
+.navs ul li a {
+	color: #000;
+}
+.navs ul li a:hover {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #39ba9b;
+}
